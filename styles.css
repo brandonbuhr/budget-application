@@ -1,0 +1,41 @@
+input {
+  margin-left: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: large;
+}
+#results {
+  text-align: center;
+}
+.container {
+  display: flex;
+  margin-left: 100px;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  max-height: 100px;
+}
+
+.income-container {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.budget-btn {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: large;
+}
+.budget-btn:hover {
+  cursor: pointer;
+  background-color: green;
+}

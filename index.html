@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budgeting App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section id="expenses">
+        <header>
+          <h1 class="title-name">Monthly Expenses</h1>
+        </header>
+        <div class="expenses-container">
+          <div class="category">
+            <h2 class="category-name">Rent/Mortgage</h2>
+            <input id="rent-input" type="number" required />
+          </div>
+          <div class="category">
+            <h2 class="category-name">Loans</h2>
+            <input id="loans-input" type="number" />
+          </div>
+          <div class="category">
+            <h2 class="category-name">Electric</h2>
+            <input id="electric-input" type="number" />
+          </div>
+          <div class="category">
+            <h2 class="category-name">Phone</h2>
+            <input id="phone-input" type="number" />
+          </div>
+          <div class="category">
+            <h2 class="category-name">Internet</h2>
+            <input id="internet-input" type="number" />
+          </div>
+          <div class="category">
+            <h2 class="category-name">Transportation</h2>
+            <input id="transportation-input" type="number" />
+          </div>
+          <div class="category">
+            <h2 class="category-name">Food</h2>
+            <input id="food-input" type="number" />
+          </div>
+          <div class="category">
+            <h2 class="category-name">Insurance</h2>
+            <input id="insurance-input" type="number" />
+          </div>
+          <div class="category">
+            <h2 class="category-name">Other</h2>
+            <input id="other-input" type="number" />
+          </div>
+        </div>
+      </section>
+      <section id="income">
+        <div class="income-container">
+          <h1 class="title-name">Monthly Income</h1>
+          <div class="category">
+            <h2 class="category-name">Salary/Wages</h2>
+            <input id="salary-input" type="number" required />
+          </div>
+          <div class="category">
+            <h2 class="category-name">Freelance/Side Income</h2>
+            <input id="freelance-input" type="number" />
+          </div>
+          <div class="category">
+            <h2 class="category-name">Passive Income</h2>
+            <input id="passive-input" type="number" />
+          </div>
+          <button class="budget-btn" onclick="calculateBudget()">
+            Create a Budget
+          </button>
+          <div id="results">
+            <h2 id="total-income"></h2>
+            <h2 id="total-expenses"></h2>
+            <h2 id="extra-income"></h2>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
