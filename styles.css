@@ -39,3 +39,10 @@ input {
   cursor: pointer;
   background-color: green;
 }
+
+@media (max-width: 1030px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
